@@ -1,0 +1,35 @@
+<view class="container">
+  <view class="nav_left">
+    <block wx:for="{{navLeftItems}}">
+      <view class="nav_left_items {{curNav == item.id ? 'active' : ''}}" bindtap="switchRightTab" data-index="{{index}}" data-id="{{item.id}}">{{item.name}}</view>
+    </block>
+  </view>
+  <view class="nav_right">
+    <view wx:if="{{navRightItems[curIndex].nodes}}">
+      <block wx:for="{{navRightItems[curIndex].nodes}}">
+        <navigator url="../detail/index">
+          <view class="flex item">
+            <view class="item_left">
+              <image src="{{item.image}}" />
+            </view>
+            <view class="flex_auto item_middle">
+              <view>
+                <text class="title">{{item.name}}</text>
+              </view>
+              <view>
+                <text class="sub_title">{{item.subTitle}}</text>
+              </view>
+              <view>
+                <text class="actor">{{item.price}}</text>
+              </view>
+              <view class="item_order">
+                <text class="action">{{item.action}}</text>
+              </view>
+            </view>
+          </view>
+        </navigator>
+      </block>
+    </view>
+    <view wx:else>暂无数据</view>
+  </view>
+</view>

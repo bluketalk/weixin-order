@@ -1,0 +1,32 @@
+
+<!--index.wxml-->
+<view class="container">
+  <view class="text">
+    <view class="line_flag"></view>
+    <text>热门推荐</text>
+  </view>
+  <block wx:for-items="{{items}}">
+    <navigator url="../detail/index">
+      <view class="flex item">
+        <view class="item_left">
+          <image src="{{item.image}}" />
+        </view>
+        <view class="flex_auto item_middle">
+          <view>
+            <text class="title">{{item.name}}</text>
+          </view>
+          <view>
+            <text class="sub_title">{{item.subTitle}}</text>
+          </view>
+          <view>
+            <text class="actor">{{item.price}}</text>
+          </view>
+          <view class="item_order">
+            <text class="action">{{item.action}}</text>
+          </view>
+        </view>
+
+      </view>
+    </navigator>
+  </block>
+</view>

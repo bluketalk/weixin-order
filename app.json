@@ -1,0 +1,44 @@
+{
+  "pages": [
+    "pages/home/index",
+    "pages/classify/index",
+    "pages/my/index",
+    "pages/detail/index",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundTextStyle": "white",
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "微票",
+    "navigationBarBackgroundColor": "#FFFFFF",
+    "backgroundColor": "#F2f2f2",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "color": "#dddddd",
+    "selectedColor": "#3cc51f",
+    "borderStyle": "white",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/home/index",
+        "iconPath": "image/icon_normal.png",
+        "selectedIconPath": "image/icon_pressed.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/classify/index",
+        "iconPath": "image/icon_normal.png",
+        "selectedIconPath": "image/icon_pressed.png",
+        "text": "类别"
+      },
+      {
+        "pagePath": "pages/my/index",
+        "iconPath": "image/icon_normal.png",
+        "selectedIconPath": "image/icon_pressed.png",
+        "text": "订单"
+      }
+    ]
+  },
+  "debug": true
+}
